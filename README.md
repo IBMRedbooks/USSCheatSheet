@@ -5,12 +5,13 @@ The z/OS operating system has a Unix interface in addition to the traditional TS
 
 | USS "Command" | Description                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| ls -lta | List the files in the current directory -l makes sure it shows data like permissions, -t sorts by time and -a shows . info|
-| ls -ET | List the files in the current directory -E shows extended attributes (like APF authorization) and T shows file tagging (is it ASCII, EBCIDIC, or Binary)|
-| chattr +a *filename*| Change attributes of the file *filename* to make it APF authorized. Other attributes could be set as well.|
+|<img width="400"/> chattr +a *filename*| Change attributes of the file *filename* to make it APF authorized. Other attributes could be set as well.|
 | chtag -t -c IBM-1047 *filename*| Tag *filename* as an EBCIDIC. The chtag allows you to tell z/OS how the file is encoded.|
 | chtag -t -c ISO8859-1 *filename* | Tag *filename* as an ASCII file. The chtag allows you to tell z/OS how the file is encoded.|
-| type *name* | Show the location of the executable known as *name*. Very useful when you want to make sure you are executing the right code.|
+| df -kP | Display free space in the filesystems -k makes sure the numbers are in 1K (instead of 512 bytes. P means show fomplete info (including percentages |
+| ls -lta | List the files in the current directory -l makes sure it shows data like permissions, -t sorts by time and -a shows . info|
+| ls -ET | List the files in the current directory -E shows extended attributes (like APF authorization) and T shows file tagging (is it ASCII, EBCIDIC, or Binary)|
 | mkdir | Create a directory. The file system is hierarchical. This will create a directory in the current directory. |
 | rm * | Remove a file. With the * it will remove all of the files in the current directory |
 | rm -R * | Remove all of the files in this directory and recurse down any directories and remove files from them too|
+| type *name* | Show the location of the executable known as *name*. Very useful when you want to make sure you are executing the right code.|
