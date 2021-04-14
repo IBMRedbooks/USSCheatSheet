@@ -9,6 +9,7 @@ The z/OS operating system has a Unix interface in addition to the traditional TS
 | chtag -t -c IBM-1047 *filename*| Tag *filename* as an EBCIDIC. The chtag allows you to tell z/OS how the file is encoded.|
 | chtag -t -c ISO8859-1 *filename* | Tag *filename* as an ASCII file. The chtag allows you to tell z/OS how the file is encoded.|
 | df -kP | Display free space in the filesystems -k makes sure the numbers are in 1K (instead of 512 bytes. P means show fomplete info (including percentages |
+|find / -name *filename* 2>/dev/null| Look in the file system for *filename* starting in the root. if you come across an error (like Permission Denied) throw it away. |
 | ls -lta | List the files in the current directory -l makes sure it shows data like permissions, -t sorts by time and -a shows . info|
 | ls -ET | List the files in the current directory -E shows extended attributes (like APF authorization) and T shows file tagging (is it ASCII, EBCIDIC, or Binary)|
 | mkdir | Create a directory. The file system is hierarchical. This will create a directory in the current directory. |
