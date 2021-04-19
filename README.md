@@ -13,6 +13,7 @@ The z/OS operating system has a Unix interface in addition to the traditional TS
 | [ls](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/lscmd.htm) -lta | List the files in the current directory -l makes sure it shows data like permissions, -t sorts by time and -a shows . info|
 | [ls](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/lscmd.htm) -ET | List the files in the current directory -E shows extended attributes (like APF authorization) and T shows file tagging (is it ASCII, EBCIDIC, or Binary)|
 | [mkdir](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/mkdir.htm) | Create a directory. The file system is hierarchical. This will create a directory in the current directory. |
+|[ps](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-ps-return-status-process) -ef | Return the status of all of the processes known by USS |
 | [rm](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/rm.htm) * | Remove a file. With the * it will remove all of the files in the current directory |
 | [rm](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/rm.htm) -R * | Remove all of the files in this directory and recurse down any directories and remove files from them too|
 | [type](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/type.htm) *name* | Show the location of the executable known as *name*. Very useful when you want to make sure you are executing the right code.|
