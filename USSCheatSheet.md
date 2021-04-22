@@ -6,7 +6,7 @@ The z/OS operating system has a Unix interface in addition to the traditional TS
 
 | USS "Command" | Description                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-|<img width="400"/> [chattr](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-chattr) +a *filename*| Change attributes of the file *filename* to make it APF authorized. Other attributes could be set as well.|
+|<img width="400"/> [chattr](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-chattr){target="_blank"} +a *filename*| Change attributes of the file *filename* to make it APF authorized. Other attributes could be set as well.|
 | [chtag](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-chtag-change-file-tag-information) -t -c IBM-1047 *filename*| Tag *filename* as an EBCIDIC. The chtag allows you to tell z/OS how the file is encoded.|
 | [chtag](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-chtag-change-file-tag-information) -t -c ISO8859-1 *filename* | Tag *filename* as an ASCII file. The chtag allows you to tell z/OS how the file is encoded.|
 | [df](https://www.ibm.com/docs/en/zos/2.1.0?topic=scd-df-display-amount-free-space-in-file-system) -kP | Display free space in the filesystems -k makes sure the numbers are in 1K (instead of 512 bytes. P means show fomplete info (including percentages |
