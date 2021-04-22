@@ -1,4 +1,4 @@
-# Unix System Services Cheat Sheet
+# Unix System Services Cheet Sheet
 
 Repo for capturing cheat sheet guidance for Unix System Services in IBM Z.
 
