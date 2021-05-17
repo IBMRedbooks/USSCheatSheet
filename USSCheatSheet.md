@@ -1,6 +1,7 @@
 # Unix System Services Cheat Sheet
 
-The z/OS operating system has a Unix interface in addition to the traditional TSO interface. Details can be found [here](https://en.wikipedia.org/wiki/UNIX_System_Services). Many z/OS systems programmers are unused to working in the Unix shell and have a hard time getting around in the Unix shell. Additionally, the default shell on USS is not a bash shell so help provided by traditional Unix users is sometimes deceptive.
+The z/OS operating system has a Unix interface in addition to the traditional TSO interface. This Unix interface is called Unix System Services, and is often abbreviated as USS. Details can be found [here](https://en.wikipedia.org/wiki/UNIX_System_Services). Many z/OS systems programmers are unused to working in the Unix shell and have a hard time getting around in the Unix shell. Additionally, the default shell on USS is not a bash shell so help provided by traditional Unix users is sometimes deceptive.
+[The Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) is important to take to heart when using USS, and is summarized succinctly: _The Unix philosophy emphasizes building simple, short, clear, modular, and extensible code that can be easily maintained and repurposed by developers other than its creators._
 
 This page is intended to provide z/OS Systems Programmers (AKA Sysprogs) a cheat sheet that they can use to do most of the tasks they would need to accomplish on z/OS USS. Contributions come from Sysprogs in multiple companies. 
 
