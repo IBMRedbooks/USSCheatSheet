@@ -1,10 +1,14 @@
 # Unix System Services Cheat Sheet
 
-The z/OS operating system has a Unix interface in addition to the traditional TSO interface. Details can be found [here](https://en.wikipedia.org/wiki/UNIX_System_Services). Many z/OS systems programmers are unused to working in the Unix shell and have a hard time getting around in the Unix shell. Additionally, the default shell on USS is not a bash shell so help provided by traditional Unix users is sometimes deceptive. This page is intended to provide z/OS Systems Programmers (AKA Sysprogs) a cheat sheet that they can use to do most of the tasks they would need to accomplish on z/OS USS. Contributions come from Sysprogs in multiple companies. Clicking on the command will take you to detailed documentation of that particular command. Detail for all commands can be found in the [Unix System Services Command Reference](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zOSV2R3SA232280/$file/bpxa500_v2r3.pdf).
+The z/OS operating system has a Unix interface in addition to the traditional TSO interface. Details can be found [here](https://en.wikipedia.org/wiki/UNIX_System_Services). Many z/OS systems programmers are unused to working in the Unix shell and have a hard time getting around in the Unix shell. Additionally, the default shell on USS is not a bash shell so help provided by traditional Unix users is sometimes deceptive.
 
+This page is intended to provide z/OS Systems Programmers (AKA Sysprogs) a cheat sheet that they can use to do most of the tasks they would need to accomplish on z/OS USS. Contributions come from Sysprogs in multiple companies. 
 
+Clicking on the command will take you to detailed documentation of that particular command. Detail for all commands can be found in the [Unix System Services Command Reference](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zOSV2R3SA232280/$file/bpxa500_v2r3.pdf).
 
-| USS "Command" | Description                                                                                                                                   |
+[man](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-man-display-sections-online-reference-manual) *command* will also give you more information and (often) examples of usage.
+
+| USS Command | Description                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | [extattr](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-extattr-set-reset-display-extended-attributes-files) +a *filename*| Change attributes of the file *filename* to make it APF authorized. Other attributes could be set as well.|
 | [chtag](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-chtag-change-file-tag-information) -t -c IBM-1047 *filename*| Tag *filename* as an EBCIDIC. The chtag allows you to tell z/OS how the file is encoded.|
