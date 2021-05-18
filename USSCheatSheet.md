@@ -1,16 +1,17 @@
-# Unix System Services Cheat Sheet
+# UNIX System Services Cheat Sheet
 
-The z/OS operating system has a Unix interface in addition to the traditional TSO interface. This Unix interface is called Unix System Services, and is often abbreviated as USS. Details can be found [here](https://en.wikipedia.org/wiki/UNIX_System_Services). Many z/OS systems programmers are unused to working in the Unix shell and have a hard time getting around in the Unix shell. Additionally, the default shell on USS is not a bash shell so help provided by traditional Unix users is sometimes deceptive.
-[The Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) is important to take to heart when using USS, and is summarized succinctly: _The Unix philosophy emphasizes building simple, short, clear, modular, and extensible code that can be easily maintained and repurposed by developers other than its creators._
+The z/OS operating system has a Unix interface in addition to the traditional TSO interface. This Unix interface is called UNIX System Services, and is often abbreviated as USS. Details can be found [here](https://en.wikipedia.org/wiki/UNIX_System_Services). Many z/OS systems programmers are unused to working in the Unix shell and have a hard time navigating it. Additionally, the default shell on USS is not a `bash` shell, so help provided by traditional Unix users is sometimes deceptive.
 
-This page is intended to provide z/OS Systems Programmers (AKA Sysprogs) a cheat sheet that they can use to do most of the tasks they would need to accomplish on z/OS USS. Contributions come from Sysprogs in multiple companies. 
+[The Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) is important to take to heart when using z/OS UNIX, and is summarized succinctly: _The Unix philosophy emphasizes building simple, short, clear, modular, and extensible code that can be easily maintained and repurposed by developers other than its creators._
+
+This page is intended to provide z/OS Systems Programmers (aka sysprogs) a cheat sheet that they can use to do most of the tasks they would need to accomplish on z/OS UNIX. Contributions come from sysprogs in multiple companies.
 
 Clicking on the command will take you to detailed documentation of that particular command. Detail for all commands can be found in the [Unix System Services Command Reference](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zOSV2R3SA232280/$file/bpxa500_v2r3.pdf).
 
 [man](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-man-display-sections-online-reference-manual) *command* will also give you more information and (often) examples of usage.
 
-| USS Command | Description                                                                                                                                   |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| z/OS UNIX Command | Description |
+|---|---|
 | [chtag](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-chtag-change-file-tag-information) -t -c IBM-1047 *filename*| Tag *filename* as an EBCIDIC. The chtag allows you to tell z/OS how the file is encoded.|
 | [chtag](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-chtag-change-file-tag-information) -t -c ISO8859-1 *filename* | Tag *filename* as an ASCII file. The chtag allows you to tell z/OS how the file is encoded.|
 | [dcp](https://www.ibm.com/docs/en/zoau/1.1.0?topic=commands-dcp) _MY.TEXT.PDS_ _/absolute/path_ | Copy plain text members _(i.e. source code)_ from a PDS to to a folder on ZFS. _([Requires ZOAU](https://www.ibm.com/docs/en/zoau/1.1.0?topic=installing-configuring-zoa-utilities))_ |
@@ -30,7 +31,7 @@ Clicking on the command will take you to detailed documentation of that particul
 | [find](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/find.htm) / -name *filename* 2>/dev/null| Look in the file system for *filename* starting in the root. if you come across an error (like Permission Denied) throw it away. |
 | [kill](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-kill-end-process-job-send-it-signal) -9 *processnumber* | Kill (end) the process identified by *processnumber*. Great for runaway processes |
 | [ls](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/lscmd.htm) -lta | List the files in the current directory -l makes sure it shows data like permissions, -t sorts by time and -a shows . info|
-| [ls](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/lscmd.htm) -ET | List the files in the current directory -E shows extended attributes (like APF authorization) and T shows file tagging (is it ASCII, EBCIDIC, or Binary) |
+| [ls](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/lscmd.htm) -ET | List the files in the current directory -E shows extended attributes (like APF authorization) and T shows file tagging (is it ASCII, EBCDIC, or Binary) |
 | [mkdir](https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxa500/mkdir.htm) | Create a directory. The file system is hierarchical. This will create a directory in the current directory. |
 | [mls](https://www.ibm.com/docs/en/zoau/1.1.0?topic=commands-mls) _MY.PDS_ | List PSD members. _([Requires ZOAU](https://www.ibm.com/docs/en/zoau/1.1.0?topic=installing-configuring-zoa-utilities))_ |
 | [mmv](https://www.ibm.com/docs/en/zoau/1.1.0?topic=commands-mmv) _MY.PDS_ _ORIG_ _NEW_ | Rename a PDS member. _([Requires ZOAU](https://www.ibm.com/docs/en/zoau/1.1.0?topic=installing-configuring-zoa-utilities))_ |
