@@ -40,3 +40,6 @@ Clicking on the command will take you to detailed documentation of that particul
 | [rm](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-rm-remove-directory-entry) * | Remove a file. With the * it will remove all of the files in the current directory |
 | [rm](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-rm-remove-directory-entry) -R * | Remove all of the files in this directory and recurse down any directories and remove files from them too |
 | [type](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-type-tell-how-shell-interprets-name) *name* | Show the location of the executable known as *name*. Very useful when you want to make sure you are executing the right code.|
+| [pwd](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-pwd-return-working-directory-name) | displays the absolute path name of the working directory to standard output |
+| [cat](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-cat-concatenate-display-filesv) *filename* | cat displays and concatenates files. It copies each file argument to the standard output (stdout). |
+| [grep](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-grep-search-file-specified-pattern) | Search a file or stdin for a specified pattern. This can be useful for searching within long command output, by piping another command's stdout into grep. |
