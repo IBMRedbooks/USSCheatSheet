@@ -1,12 +1,12 @@
 # UNIX System Services Cheat Sheet
 
-The z/OS operating system has a Unix interface in addition to the traditional TSO interface. This Unix interface is called UNIX System Services, and is often abbreviated as USS. Details can be found [here](https://en.wikipedia.org/wiki/UNIX_System_Services). Many z/OS systems programmers are unused to working in the Unix shell and have a hard time navigating it. Additionally, the default shell on USS is not a `bash` shell, so help provided by traditional Unix users is sometimes deceptive.
+The z/OS operating system has a Unix interface in addition to the traditional TSO interface. This Unix interface is called UNIX System Services, and is often abbreviated as USS. [Details can be found here](https://en.wikipedia.org/wiki/UNIX_System_Services). Many z/OS systems programmers are unused to working in the Unix shell and have a hard time navigating it. Additionally, the default shell on USS is not a `bash` shell, so help provided by traditional Unix users is sometimes deceptive.
 
 [The Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) is important to take to heart when using z/OS UNIX, and is summarized succinctly: _The Unix philosophy emphasizes building simple, short, clear, modular, and extensible code that can be easily maintained and repurposed by developers other than its creators._
 
 This page is intended to provide z/OS Systems Programmers (aka sysprogs) a cheat sheet that they can use to do most of the tasks they would need to accomplish on z/OS UNIX. Contributions come from sysprogs in multiple companies.
 
-Clicking on the command will take you to detailed documentation of that particular command. Detail for all commands can be found in the [UNIX System Services Command Reference](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zOSV2R4sa232280/$file/bpxa500_v2r4.pdf).
+Clicking on the command will take you to detailed documentation of that particular command. Details for all commands can be found in the [UNIX System Services Command Reference](https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zOSV2R4sa232280/$file/bpxa500_v2r4.pdf).
 
 [man](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-man-display-sections-online-reference-manual) *command* will also give you more information and (often) examples of usage.
 
