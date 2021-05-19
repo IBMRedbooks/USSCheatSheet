@@ -12,6 +12,7 @@ Clicking on the command will take you to detailed documentation of that particul
 
 | z/OS UNIX Command | Description |
 |---|---|
+| [cat](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-cat-concatenate-display-filesv) *filename* | cat displays and concatenates files. It copies each file argument to the standard output (stdout). |
 | [chtag](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-chtag-change-file-tag-information) -t -c IBM-1047 *filename*| Tag *filename* as an EBCIDIC. The chtag allows you to tell z/OS how the file is encoded.|
 | [chtag](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-chtag-change-file-tag-information) -t -c ISO8859-1 *filename* | Tag *filename* as an ASCII file. The chtag allows you to tell z/OS how the file is encoded.|
 | [dcp](https://www.ibm.com/docs/en/zoau/1.1.1?topic=commands-dcp) _MY.TEXT.PDS_ _/absolute/path_ | Copy plain text members _(i.e. source code)_ from a PDS to to a folder on ZFS. _([Requires ZOAU](https://www.ibm.com/docs/en/zoau/1.1.1?topic=installing-configuring-zoa-utilities))_ |
@@ -29,6 +30,7 @@ Clicking on the command will take you to detailed documentation of that particul
 | [dtouch](https://www.ibm.com/docs/en/zoau/1.1.1?topic=commands-dtouch) -b _directory blocks_ -r U -c PO -t PDSE -s *primary cylinders(K/KB, M/MB, G/GB, C/CYL, T/TRK)* -e *secondary cylinders(K/KB, M/MB, G/GB, C/CYL, T/TRK)* _MY.LOAD.PDS_ | Allocate a PDSE dataset for link edited/executable binary objects _(LOAD modules)_. _([Requires ZOAU](https://www.ibm.com/docs/en/zoau/1.1.1?topic=installing-configuring-zoa-utilities))_ |
 | [extattr](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-extattr-set-reset-display-extended-attributes-files) +a *filename*| Change attributes of the file *filename* to make it APF authorized. Other attributes could be set as well.|
 | [find](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-find-find-file-that-meets-specified-criteria) / -name *filename* 2>/dev/null| Look in the file system for *filename* starting in the root. if you come across an error (like Permission Denied) throw it away. |
+| [grep](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-grep-search-file-specified-pattern) | Search a file or stdin for a specified pattern. This can be useful for searching within long command output, by piping another command's stdout into grep. |
 | [kill](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-kill-end-process-job-send-it-signal) -9 *processnumber* | Kill (end) the process identified by *processnumber*. Great for runaway processes |
 | [ls](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-ls-list-file-directory-names-attributes) -lta | List the files in the current directory -l makes sure it shows data like permissions, -t sorts by time and -a shows . info|
 | [ls](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-ls-list-file-directory-names-attributes) -ET | List the files in the current directory -E shows extended attributes (like APF authorization) and T shows file tagging (is it ASCII, EBCDIC, or Binary) |
@@ -36,10 +38,9 @@ Clicking on the command will take you to detailed documentation of that particul
 | [mls](https://www.ibm.com/docs/en/zoau/1.1.1?topic=commands-mls) _MY.PDS_ | List PSD members. _([Requires ZOAU](https://www.ibm.com/docs/en/zoau/1.1.1?topic=installing-configuring-zoa-utilities))_ |
 | [mmv](https://www.ibm.com/docs/en/zoau/1.1.1?topic=commands-mmv) _MY.PDS_ _ORIG_ _NEW_ | Rename a PDS member. _([Requires ZOAU](https://www.ibm.com/docs/en/zoau/1.1.1?topic=installing-configuring-zoa-utilities))_ |
 | [mrm](https://www.ibm.com/docs/en/zoau/1.1.1?topic=commands-mrm) _MY.PDS(MEMBER)_ | Delete a PDS member. _([Requires ZOAU](https://www.ibm.com/docs/en/zoau/1.1.1?topic=installing-configuring-zoa-utilities))_ |
+| [opercmd](https://www.ibm.com/docs/en/zoau/1.1.1?topic=commands-opercmd) "_OPERATOR-COMMAND_"  | Issue a z/OS operator command.  May fail without sufficient authority. _([Requires ZOAU](https://www.ibm.com/docs/en/zoau/1.1.1?topic=installing-configuring-zoa-utilities))_ |
 | [ps](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-ps-return-status-process) -ef | Return the status of all of the processes known by USS |
+| [pwd](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-pwd-return-working-directory-name) | displays the absolute path name of the working directory to standard output |
 | [rm](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-rm-remove-directory-entry) * | Remove a file. With the * it will remove all of the files in the current directory |
 | [rm](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-rm-remove-directory-entry) -R * | Remove all of the files in this directory and recurse down any directories and remove files from them too |
 | [type](https://www.ibm.com/docs/en/zos/2.1.0?topic=descriptions-type-tell-how-shell-interprets-name) *name* | Show the location of the executable known as *name*. Very useful when you want to make sure you are executing the right code.|
-| [pwd](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-pwd-return-working-directory-name) | displays the absolute path name of the working directory to standard output |
-| [cat](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-cat-concatenate-display-filesv) *filename* | cat displays and concatenates files. It copies each file argument to the standard output (stdout). |
-| [grep](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-grep-search-file-specified-pattern) | Search a file or stdin for a specified pattern. This can be useful for searching within long command output, by piping another command's stdout into grep. |
