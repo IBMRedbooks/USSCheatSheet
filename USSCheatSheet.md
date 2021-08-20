@@ -12,7 +12,7 @@ Clicking on the command will take you to detailed documentation of that particul
 
 | z/OS UNIX Command | Description |
 |---|---|
-| [amblist](https://www.ibm.com/docs/en/zos/2.4.0?topic=management-amblistv) "//'*MY.LOAD.PDS*'" <<< " LISTLOAD MEMBER=*MYMEMBER*" > *filename*.amblist | Generate an AMBLIST for a load module member and store the generated AMBLIST in *filename*.amblist. |
+| [amblist](https://www.ibm.com/docs/en/zos/2.4.0?topic=management-amblist) "//'*MY.LOAD.PDS*'" <<< " LISTLOAD MEMBER=*MYMEMBER*" > *filename*.amblist | Generate an AMBLIST for a load module member and store the generated AMBLIST in *filename*.amblist. |
 | [cat](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-cat-concatenate-display-filesv) *filename* | cat displays and concatenates files. It copies each file argument to the standard output (stdout). |
 | [chmod](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-chmod) +x *filename* | Make a file executable. |
 | [chtag](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-chtag-change-file-tag-information) -t -c IBM-1047 *filename*| Tag *filename* as an EBCIDIC. The chtag allows you to tell z/OS how the file is encoded.|
