@@ -14,6 +14,7 @@ Clicking on the command will take you to detailed documentation of that particul
 |---|---|
 | [amblist](https://www.ibm.com/docs/en/zos/2.4.0?topic=management-amblist) "//'*MY.LOAD.PDS*'" <<< " LISTLOAD MEMBER=*MYMEMBER*" > *filename*.amblist | Generate an AMBLIST for a load module member and store the generated AMBLIST in *filename*.amblist. |
 | [cat](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-cat-concatenate-display-filesv) *filename* | cat displays and concatenates files. It copies each file argument to the standard output (stdout). |
+| [cat](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-cat-concatenate-display-filesv) -Wfilecodeset=IBM-1047 *filename* | Use specific code page for cat |
 | [chmod](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-chmod) +x *filename* | Make a file executable. |
 | [chtag](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-chtag-change-file-tag-information) -t -c IBM-1047 *filename*| Tag *filename* as an EBCIDIC. The chtag allows you to tell z/OS how the file is encoded.|
 | [chtag](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-chtag-change-file-tag-information) -t -c ISO8859-1 *filename* | Tag *filename* as an ASCII file. The chtag allows you to tell z/OS how the file is encoded.|
@@ -39,6 +40,7 @@ Clicking on the command will take you to detailed documentation of that particul
 | [du](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-du-summarize-usage-file-space) -ks _folderorfilesame_ | Display how much disk space in kilobytes a folder or file takes up. |
 | [extattr](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-extattr-set-reset-display-extended-attributes-files) +a *filename*| Change attributes of the file *filename* to make it APF authorized. Other attributes could be set as well.|
 | [find](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-find-find-file-that-meets-specified-criteria) / -name *filename* 2>/dev/null| Look in the file system for *filename* starting in the root. if you come across an error (like Permission Denied) throw it away. |
+| [find](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-find-find-file-that-meets-specified-criteria) . -type f \| [xargs](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-xargs-construct-argument-list-run-command) [grep](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-grep-search-file-specified-pattern) *pattern* | A way to recursively search for files that contain a specific pattern. On other platforms also known as grep -r|
 | [grep](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-grep-search-file-specified-pattern) | Search a file or stdin for a specified pattern. This can be useful for searching within long command output, by piping another command's stdout into grep. |
 | [iconv](https://www.ibm.com/docs/en/zos/2.4.0?topic=utility-under-zos-shell) -l | Show encoding schemes that are supported on z/OS UNIX. |
 | [iconv](https://www.ibm.com/docs/en/zos/2.4.0?topic=utility-under-zos-shell) -T -f _originalencoding_ -t _newencoding_ _originalfile_ > _newfile_ | Convert the bytes contained in a file to a new encoding and write the converted bytes to a new file that is tagged according to the new encoding. |
@@ -65,3 +67,5 @@ Clicking on the command will take you to detailed documentation of that particul
 | tso "[RENAME](https://www.ibm.com/docs/en/zos/2.4.0?topic=subcommands-rename-command) *'MY.PDS(REALMEMBER)'* (*ALIASMEMBER*) ALIAS" | Create an alias of a dataset member. |
 | tsocmd "[LISTDS](https://www.ibm.com/docs/en/zos/2.4.0?topic=subcommands-listds-command) *'MY.PDS'* MEMBERS" | List the members of a PDS and show dataset member aliases. |
 | [type](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-type-tell-how-shell-interprets-name) *name* | Show the location of the executable known as *name*. Very useful when you want to make sure you are executing the right code.|
+
+
