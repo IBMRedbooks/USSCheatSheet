@@ -63,7 +63,7 @@ Clicking on the command will take you to detailed documentation of that particul
 | [sha1](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-sha1-calculate-check-sha-1-cryptographic-hashes) "//'*MY.PDS(MEMBER)*'" | Generate a dataset member's SHA1 checksum hash and print the generated checksum to the console. |
 | [sha256](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-sha256-calculate-check-sha-256-cryptographic-hashes) *filename* | Generate a file's SHA256 checksum hash and print the generated checksum to the console. |
 | [sha256](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-sha256-calculate-check-sha-256-cryptographic-hashes) "//'*MY.PDS(MEMBER)*'" | Generate a dataset member's SHA256 checksum hash and print the generated checksum to the console. |
-| sysvar SYSNAME | Display the system name |
+| [sysvar](https://www.ibm.com/docs/en/zos/2.3.0?topic=descriptions-sysvar-display-static-system-symbols) SYSNAME | Display the system name. |
 | tso "[CALL](https://www.ibm.com/docs/en/zos/2.4.0?topic=subcommands-call-command) *'MY.PDS(MEMBER)'*" | Call/execute a load module member. |
 | tso "[RENAME](https://www.ibm.com/docs/en/zos/2.4.0?topic=subcommands-rename-command) *'MY.PDS(REALMEMBER)'* (*ALIASMEMBER*) ALIAS" | Create an alias of a dataset member. |
 | tsocmd "[LISTDS](https://www.ibm.com/docs/en/zos/2.4.0?topic=subcommands-listds-command) *'MY.PDS'* MEMBERS" | List the members of a PDS and show dataset member aliases. |
